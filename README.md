@@ -1,5 +1,7 @@
 # simple-jwt-lambda-authorizer
 - Simple jwt lambda authorizer. dynamodb + lambda + api gateway.
+- for developers, Aws cognito quota limit(120 tps) dont fit.
+- its performance is about 30ms. on lamda edege, this program produce 33333 tps(1000 concurrency).
 
 # Feature
 - node.js 14.x compatible jwt authorizer on aws lambda.
@@ -18,3 +20,5 @@
 7. Create API Gatewaty for lambda function.
 8. Test Post(userid=testuser&password=testpassword)
 9. if you see jwt token, setup is completed
+
+- if you want validate jwt tokens, use api gateway JWT authorizer.
