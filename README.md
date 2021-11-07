@@ -9,6 +9,7 @@
 - support payload is
 - sub : userid
 - exp : expired time (12 hour by default)
+- extend payload if you want.
 
 # Setup
 1. Create aws lambda function(in any name), use runtime node.js 14.x.
