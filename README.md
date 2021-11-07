@@ -11,7 +11,7 @@
 - exp : expired time (12 hour by default)
 - extend payload if you want.
 
-# Setup
+# Setup&Test
 1. Create aws lambda function(in any name), use runtime node.js 14.x.
 2. Paste or upload index.js
 3. change private key(test will work if not)
