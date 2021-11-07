@@ -16,5 +16,5 @@
 5. Create Dynamodb name is "UserPool". key name is "userid".
 6. Add Item userid and password.(testuser, testpassword)
 7. Create API Gatewaty for lambda function.
-8. Test Post(userid=testuser&passowrd=testpassword)
+8. Test Post(userid=testuser&password=testpassword)
 9. if you see jwt token, setup is completed
