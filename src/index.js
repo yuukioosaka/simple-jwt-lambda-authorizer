@@ -75,9 +75,9 @@ async function handle(event) {
     let params = {
         TableName: "UserPool",
         Key: {
-            "userid": q.userid
         }
     };
+    params.Key[tablekey] = q.userid;
 
     let result = await docClient.get(params).promise();
 
@@ -85,7 +85,7 @@ async function handle(event) {
         throw "Auth Failed."
     }
 
-    if (q.password != result.Item.password) {
+    if (q.password != result.Item[passkey]) {
         throw "Auth Failed."
     }
 
