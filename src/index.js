@@ -1,7 +1,9 @@
+//Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. 
+
 //change here
 //jwt exipred time in hour
 let expiredHour = 12 ;
-//private key(no passphrase)
+//private key(must be no passphrase pem)
 let privateKey =
     "-----BEGIN RSA PRIVATE KEY-----\n" +
     "MIIEpgIBAAKCAQEA5xLFzYo1jV3i09fzyvygmF0G1tFeSjUChi5lVn2ve8BFWxHL\n" +
@@ -32,9 +34,9 @@ let privateKey =
     "-----END RSA PRIVATE KEY-----\n";
 //Dynamodb table name
 let usertable = "UserPool";
-//table key
+//Dynamodb table key
 let tablekey = "userid";
-//password key
+//Dynamodb password key
 let passkey = "password";
 //end
 
